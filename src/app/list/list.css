@@ -1,0 +1,212 @@
+.section {
+    padding: 40px 20px;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 30px;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-left: 12rem;
+    margin-top: 80px;
+    font-weight: 600;
+}
+
+.sliderWrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-evenly;
+
+}
+
+.arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+.slider {
+    overflow: hidden;
+    width: calc(392px * 3 + 200px);
+    /* 3 cards visible + spacing */
+    padding: 12px;
+}
+
+.cardsContainer {
+    display: flex;
+    gap: 30px;
+    transition: transform 0.4s ease;
+}
+
+.card {
+    width: 392px;
+    height: auto;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: 257px;
+    object-fit: cover;
+}
+.unavailable{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    z-index: 1;
+}
+.numberOfPhotos{
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        background: rgba(0, 0, 0, 0.2);
+        color: #fff;
+        font-weight: 700;
+        padding: 4px 8px;
+        border-radius: 12px;
+        font-size: 12px;
+}
+.saleText{
+    position:absolute;
+    top: 15px;
+    left: 10px;
+    background: #b7cf53;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+}
+.cameraIcon{
+    margin-left:4px;
+    margin-top:2px;
+    font-size:10px;
+}
+.address {
+    position: absolute;
+    top: 45%;
+    align-items: center;
+    margin: 12px 16px 4px;
+    font-size: 14px;
+    color: #ebecf0;
+            background: rgba(0, 0, 0, 0.38);
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-weight: 500;
+}
+.price {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 12px 16px 4px;
+    color: #b7cf53;
+    display: flex;
+    justify-content: space-between;
+}
+
+.days {
+    font-size: 16px;
+    color: #979797;
+    margin: 0 16px 4px;
+}
+
+.sale {
+    color: black;
+    font-weight: 500;
+    margin: 16px 16px 12px;
+    font-size: 16px;
+}
+
+.stats {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 16px 12px;
+    font-size: 14px;
+    color: #6f7075;
+}
+
+.stats div {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.cardIcons {
+    margin-left: 5px;
+}
+
+.listFooter {
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actions {
+    display: flex;
+}
+
+.actions span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-right: 12px;
+    font-size: 14px;
+}
+
+.viewBtn {
+    background: #b9d153;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 35px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    width: 140px;
+    height: 36px;
+}
+
+.viewBtn:hover {
+    background: #a0b83f;
+}
+
+.heartIcon {
+    padding: 4px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    background-color: #f4f4f4;
+    color: #979797;
+}
+
+.shareIcon {
+    padding: 6px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    background-color: #f4f4f4;
+    color: #979797;
+    margin-left: 5px;
+}
+
+@media (max-width:1200px) {
+
+    .cardsContainer {
+    display: grid;
+}
+.arrow {
+display: none;
+}
+.title{
+    margin-top: 0;
+    margin-left: 0;
+    text-align: center;
+}
+}

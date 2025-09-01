@@ -1,0 +1,74 @@
+<section class="section">
+    <h2 class="title">Listings</h2>
+    <div class="sliderWrapper">
+
+        <div class="slider">
+            <div class="cardsContainer">
+                <button class="arrow">
+
+                </button>
+
+                <div *ngFor="let card of cards" class="card">
+                    <img [src]="card.img" alt="Listing" class="image" />
+                    <img *ngIf="!card.available" [src]="IMAGES['closed']" class="unavailable" />
+                    <div><span class="saleText">Sale</span> <span class="numberOfPhotos">1 <span class="cameraIcon">
+                            </span></span></div>
+                    <div class="address">
+                        <span class="locationIcon">
+                        </span>
+                        <span class="locationText"> 1234 Elm St, Springfield, IL 62704</span>
+                    </div>
+                    <div class="price">
+                        <span>{{card.price}}</span>
+                        <span>
+                            <span class="heartIcon">
+                            </span>
+                            <span class="shareIcon">
+                            </span>
+                        </span>
+                    </div>
+
+                    <div class="days">
+                        {{card.days}}days on Reverifi
+                    </div>
+                    <div class="sale">Sale</div>
+
+                    <div class="stats">
+                        <div>
+                            <span>5 </span>
+                            <span class="cardIcons">
+                            </span>
+                        </div>
+                        <div>
+                            <span>5</span>
+                            <span class="cardIcons">
+                            </span>
+                        </div>
+                        <div>
+                            <span>3 </span>
+                            <span class="cardIcons">
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="listFooter">
+                        <div class="actions">
+                            <span>
+                                4
+                            </span>
+                            <span>
+                                2 Views
+                            </span>
+                        </div>
+                        <button class="viewBtn">View Listing</button>
+                    </div>
+                </div>
+
+                <button class="arrow">
+
+                </button>
+            </div>
+        </div>
+
+    </div>
+</section>
