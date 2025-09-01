@@ -217,4 +217,8 @@
         margin-left: 0;
         text-align: center;
     }
+
+    .numberOfPhotos {
+        right: 23px;
+    }
 }

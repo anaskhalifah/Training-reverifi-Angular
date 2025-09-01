@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-
+import {IMAGES} from '../../../public';
 @Component({
   selector: 'app-footer',
   imports: [],
@@ -8,5 +8,6 @@ import { Component, signal } from '@angular/core';
 })
 export class Footer {
 
+  IMAGES = IMAGES;
  currentYear = signal(new Date().getFullYear());
 }

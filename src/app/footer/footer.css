@@ -104,9 +104,6 @@
   height: 27px;
 }
 
-.linkedinIcon svg {
-  margin: 1px 0 0 2px;
-}
 
 .twitterIcon {
   background-color: rgb(0, 153, 255);
@@ -114,10 +111,6 @@
   padding: 3px;
   width: 27px;
   height: 27px;
-}
-
-.twitterIcon svg {
-  margin: 3px 0 0 3px;
 }
 
 .instagramIcon {
@@ -128,8 +121,8 @@
   height: 27px;
 }
 
-.instagramIcon svg {
-  margin: 1px 0 0 1px;
+.instagramIcon img {
+margin-top: 1px;
 }
 
 .socialFooter {
