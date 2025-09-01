@@ -19,7 +19,7 @@
 
     .user span {
       font-family: "Inter", sans-serif;
-font-weight: 500;
+      font-weight: 500;
     }
 
     .navLeft a {
@@ -76,7 +76,6 @@ font-weight: 500;
     .user img {
       width: 32px;
       height: 32px;
-      border-radius: 50%;
     }
 
 
@@ -98,7 +97,7 @@ font-weight: 500;
 
 
 
-    .dropdownBtn .icon {
+    .dropdownBtn img {
       width: 15px;
       height: 15px;
       transition: transform 0.2s ease;

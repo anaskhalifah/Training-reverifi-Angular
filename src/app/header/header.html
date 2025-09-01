@@ -18,17 +18,16 @@
       <a href="#">Leaderboard</a>
 
       <div class="notification">
+        <img [src]="IMAGES['bell-icon']" alt="Notification Bell">
       </div>
 
       <div class="user">
+        <img [src]="IMAGES['user']" alt="User Profile Picture">
         <span>Jacob Jones</span>
 
         <div class="dropdown">
-          <button 
-            (click)="toggleDropdown()" 
-            [ngClass]="{'dropDownOpen': dropDownOpen}"
-            class="dropdownBtn"
-          >
+          <button (click)="toggleDropdown()" [ngClass]="{'dropDownOpen': dropDownOpen}" class="dropdownBtn">
+            <img [src]="IMAGES['down-arrow']" alt="Down Arrow" />
           </button>
 
           <div *ngIf="dropDownOpen" class="dropdownMenu">

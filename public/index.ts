@@ -8,5 +8,8 @@ export const IMAGES: { [key: string]: string } = {
     home1: './Listing/home1.jpg',
     home2: './Listing/home2.jpg',
     home3: './Listing/home3.jpg',
-    closed: './Listing/closed.png'
+    closed: './Listing/closed.png',
+    'bell-icon': './Icons/bell.svg',
+    user:'./Icons/user.svg',
+    'down-arrow': './Icons/down-arrow.svg'
 }
