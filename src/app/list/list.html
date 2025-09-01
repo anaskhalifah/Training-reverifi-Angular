@@ -11,10 +11,18 @@
                 <div *ngFor="let card of cards" class="card">
                     <img [src]="card.img" alt="Listing" class="image" />
                     <img *ngIf="!card.available" [src]="IMAGES['closed']" class="unavailable" />
-                    <div><span class="saleText">Sale</span> <span class="numberOfPhotos">1 <span class="cameraIcon">
-                            </span></span></div>
+                    <div>
+                        <span class="saleText">Sale</span>
+                        <span class="numberOfPhotos">
+                            1
+                            <span class="cameraIcon">
+                                <img [src]="IMAGES['camera']" />
+                            </span>
+                        </span>
+                    </div>
                     <div class="address">
                         <span class="locationIcon">
+                            <img [src]="IMAGES['location']" />
                         </span>
                         <span class="locationText"> 1234 Elm St, Springfield, IL 62704</span>
                     </div>
@@ -22,8 +30,10 @@
                         <span>{{card.price}}</span>
                         <span>
                             <span class="heartIcon">
+                                <img [src]="IMAGES['heart']" />
                             </span>
                             <span class="shareIcon">
+                                <img [src]="IMAGES['share']" />
                             </span>
                         </span>
                     </div>
@@ -37,16 +47,19 @@
                         <div>
                             <span>5 </span>
                             <span class="cardIcons">
+                                <img [src]="IMAGES['bed']"/>
                             </span>
                         </div>
                         <div>
-                            <span>5</span>
+                            <span>5 </span>
                             <span class="cardIcons">
+                                <img [src]="IMAGES['shower']"/>
                             </span>
                         </div>
                         <div>
                             <span>3 </span>
                             <span class="cardIcons">
+                                <img [src]="IMAGES['garage']"/>
                             </span>
                         </div>
                     </div>
@@ -54,10 +67,13 @@
                     <div class="listFooter">
                         <div class="actions">
                             <span>
+                                <img [src]="IMAGES['filled-heart']"/>
                                 4
                             </span>
                             <span>
+                                <img [src]="IMAGES['message']"/>                                
                                 2 Views
+
                             </span>
                         </div>
                         <button class="viewBtn">View Listing</button>

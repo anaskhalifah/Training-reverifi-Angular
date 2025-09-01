@@ -57,25 +57,28 @@
     height: 257px;
     object-fit: cover;
 }
-.unavailable{
+
+.unavailable {
     position: absolute;
     top: 30%;
     left: 20%;
     z-index: 1;
 }
-.numberOfPhotos{
-        position: absolute;
-        top: 15px;
-        right: 10px;
-        background: rgba(0, 0, 0, 0.2);
-        color: #fff;
-        font-weight: 700;
-        padding: 4px 8px;
-        border-radius: 12px;
-        font-size: 12px;
+
+.numberOfPhotos {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
 }
-.saleText{
-    position:absolute;
+
+.saleText {
+    position: absolute;
     top: 15px;
     left: 10px;
     background: #b7cf53;
@@ -84,11 +87,13 @@
     border-radius: 12px;
     font-size: 12px;
 }
-.cameraIcon{
-    margin-left:4px;
-    margin-top:2px;
-    font-size:10px;
+
+.cameraIcon {
+    margin-left: 4px;
+    margin-top: 2px;
+    font-size: 10px;
 }
+
 .address {
     position: absolute;
     top: 45%;
@@ -96,11 +101,12 @@
     margin: 12px 16px 4px;
     font-size: 14px;
     color: #ebecf0;
-            background: rgba(0, 0, 0, 0.38);
-            padding: 4px 8px;
-            border-radius: 12px;
-            font-weight: 500;
+    background: rgba(0, 0, 0, 0.38);
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-weight: 500;
 }
+
 .price {
     font-size: 20px;
     font-weight: 600;
@@ -199,14 +205,16 @@
 @media (max-width:1200px) {
 
     .cardsContainer {
-    display: grid;
-}
-.arrow {
-display: none;
-}
-.title{
-    margin-top: 0;
-    margin-left: 0;
-    text-align: center;
-}
+        display: grid;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .title {
+        margin-top: 0;
+        margin-left: 0;
+        text-align: center;
+    }
 }

@@ -19,5 +19,12 @@ export const IMAGES: { [key: string]: string } = {
     instagram: './Icons/insta.svg',
     share: './Icons/share.svg',
     heart: './Icons/heart.svg',
-    search:'./Icons/search.svg'
+    search:'./Icons/search.svg',
+    location: './Icons/location.svg',
+    camera: './Icons/camera.svg',
+    bed: './Icons/bed.svg',
+    shower:'./Icons/shower.svg',
+    garage: './Icons/garage.svg',
+    message: './Icons/message.svg',
+    'filled-heart': './Icons/filled-heart.svg'
 }
