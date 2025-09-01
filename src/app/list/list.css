@@ -30,7 +30,6 @@
 .slider {
     overflow: hidden;
     width: calc(392px * 3 + 200px);
-    /* 3 cards visible + spacing */
     padding: 12px;
 }
 

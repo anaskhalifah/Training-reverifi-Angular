@@ -35,7 +35,6 @@
       color: rgba(255, 255, 255, 0.747);
     }
 
-    /* Center logo */
     .logo {
       font-size: 36px;
       font-weight: 700;
@@ -44,7 +43,6 @@
       text-align: center;
     }
 
-    /* Right side */
     .navRight {
       display: flex;
       align-items: center;
@@ -79,8 +77,6 @@
     }
 
 
-
-    /**/
     .dropdown {
       position: relative;
       display: inline-block;
@@ -131,7 +127,6 @@
       background: #3f3f3fe0;
     }
 
-    /* Hide hamburger on desktop */
     .hamburger {
       display: none;
       background: none;
@@ -140,7 +135,6 @@
       color: white;
     }
 
-    /* Mobile menu (hidden by default) */
     .mobileMenu {
       display: flex;
       flex-direction: column;

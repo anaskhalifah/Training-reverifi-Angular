@@ -7,7 +7,6 @@
     padding-left: 10rem;
 }
 
-/* Left Column */
 .left {
     display: flex;
     flex-direction: column;
@@ -46,7 +45,6 @@
     display: flex;
     align-items: center;
     gap: 16px;
-    /* space between button and icons */
 }
 
 
@@ -61,7 +59,6 @@
     transition: color 0.2s ease;
 }
 
-/* Right Column */
 .right {
     flex: 1;
     margin-top: 70px;
@@ -207,9 +204,6 @@ p {
 }
 
 
-
-
-/* Modal Overlay */
 .modalOverlay {
     position: fixed;
     top: 0;
@@ -223,7 +217,6 @@ p {
     z-index: 999;
 }
 
-/* Modal Box */
 .modal {
     background: #fff;
     border-radius: 12px;
@@ -234,7 +227,6 @@ p {
     position: relative;
 }
 
-/* Modal Header */
 .modalHeader {
     display: flex;
     justify-content: space-between;
@@ -257,7 +249,6 @@ p {
     color: #66666680;
 }
 
-/* Contact Form */
 .contactForm {
     display: flex;
     flex-direction: column;
@@ -306,7 +297,6 @@ p {
     background: #a2b942;
 }
 
-/*responsiveness*/
 
 @media (max-width: 1200px) {
     .profileImg {
