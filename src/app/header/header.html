@@ -1,0 +1,56 @@
+<header>
+  <div class="headerContainer">
+    <button class="hamburger" (click)="toggleMobileMenu()">
+    </button>
+
+    <nav class="navLeft">
+      <a href="#">Buy</a>
+      <a href="#">Rent</a>
+      <a href="#">Sell</a>
+      <a href="#">Knowledge Center</a>
+    </nav>
+
+    <h1 class="logo">reverifi</h1>
+
+    <div class="navRight">
+      <a href="#">RE PROS</a>
+      <a href="#">Events</a>
+      <a href="#">Leaderboard</a>
+
+      <div class="notification">
+      </div>
+
+      <div class="user">
+        <span>Jacob Jones</span>
+
+        <div class="dropdown">
+          <button 
+            (click)="toggleDropdown()" 
+            [ngClass]="{'dropDownOpen': dropDownOpen}"
+            class="dropdownBtn"
+          >
+          </button>
+
+          <div *ngIf="dropDownOpen" class="dropdownMenu">
+            <ul>
+              <li>Option 1</li>
+              <li>Option 2</li>
+              <li>Option 3</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div *ngIf="mobileOpen" class="mobileMenu">
+    <a href="#">Buy</a>
+    <a href="#">Rent</a>
+    <a href="#">Sell</a>
+    <a href="#">Knowledge Center</a>
+    <a href="#">RE PROS</a>
+    <a href="#">Events</a>
+    <a href="#">Leaderboard</a>
+  </div>
+</header>
