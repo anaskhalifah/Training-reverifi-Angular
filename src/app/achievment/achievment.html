@@ -1,0 +1,24 @@
+<div class="AchievementsSection">
+    <div class="headerOfAchievements">
+        <h1 class="achievementsTitle">Achievements</h1>
+        <div class="achievementAndBadgeContainer">
+            <div class="pointsElement">
+                <img [src]="IMAGES['pointsIcon']" />
+                <span>3300 Points</span>
+            </div>
+            <div class="badgeElement">
+                <img [src]="IMAGES['badge']" />
+                <span>8 Badges</span>
+            </div>
+        </div>
+    </div>
+    <section class="cardGrid">
+        <div *ngFor="let card of cards" class="card">
+            <img [src]="card.image" [alt]="card.title" class="cardImg" />
+            <div class="cardContent">
+                <h4 class="cardTitle">{{card.title}}</h4>
+                <p class="cardDate">{{card.date}}</p>
+            </div>
+        </div>
+    </section>
+</div>
