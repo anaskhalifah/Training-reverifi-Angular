@@ -1,0 +1,109 @@
+<section class="profileSection">
+    <div class="left">
+        <img [src]="images['JacobIMG']" alt="Profile" class="profileImg" />
+
+        <div class="socialActions">
+            <button class="contactBtn" (click)="openModal()">
+                Contact
+            </button>
+
+            <div class="socials">
+                <span class="facebookIcon">
+                </span>
+                <span class="youtubeIcon">
+                </span>
+                <span class="linkedinIcon">
+                </span>
+                <span class="phoneIcon">
+                </span>
+                <span class="instaIcon">
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="right">
+        <h2 class="name">
+            Jacob Jones
+            <span class="searchIcon">
+                <img src="/src/assets/searchIcon.png" alt="" />
+            </span>
+        </h2>
+        <p class="subtitle">
+            Lender/Mortgage </p>
+        <div>
+            <span class="subtitleText">NMLS #068543894</span>
+            <span class="heartIconMobile">
+            </span>
+            <span class="shareIconMobile">
+            </span>
+        </div>
+       
+
+        <div class="about">
+            <h4>About</h4>
+            <p class="aboutText">
+                Lorem ipsum dolor sit amet consectetur. Rhoncus ultrices sed aliquam tristique orci
+                velit est tellus. Et sed enim ut at scelerisque. Tincidunt proin justo nisi a.
+            </p>
+        </div>
+
+        <div class="infoGrid">
+            <div>
+                <h4>Language</h4>
+                <p>English</p>
+            </div>
+            <div>
+                <h4>Service Area</h4>
+                <p>New York</p>
+            </div>
+            <div>
+                <h4>Phone</h4>
+                <p>(406) 555-0120</p>
+            </div>
+            <div>
+                <h4>Email</h4>
+                <p>
+                    jacob.jones@example.com
+                    <span class="heartIcon">
+                    </span>
+                    <span class="shareIcon">
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<div *ngIf="isModalOpen" class="modalOverlay">
+    <div class="modal">
+        <div class="modalHeader">
+            <h3>Contact Jacob Jones</h3>
+            <button class="closeBtn" (click)="closeModal()">
+                &times;
+            </button>
+        </div>
+
+        <form class="contactForm">
+            <label>Name</label>
+            <input type="text" />
+
+            <label>Phone Number</label>
+            <input type="tel" />
+
+            <label>Email</label>
+            <input type="email" />
+
+            <label>Message</label>
+            <textarea></textarea>
+
+            <div class="formFooter">
+                <button type="submit" class="submitBtn">
+                    Contact
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

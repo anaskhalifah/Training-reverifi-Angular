@@ -1,0 +1,459 @@
+.profileSection {
+    display: flex;
+    gap: 90px;
+    background: #ffffff;
+    border-radius: 12px;
+    margin-top: 10rem;
+    padding-left: 10rem;
+}
+
+/* Left Column */
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    top: -36px;
+}
+
+.profileImg {
+    width: 414px;
+    height: 468px;
+    border-radius: 35px;
+    object-fit: cover;
+}
+
+.searchIcon {
+    position: relative;
+    top: 1.5rem;
+    left: 1rem;
+}
+
+.contactBtn {
+    padding: 10px 20px;
+    border: none;
+    background: #b9d153;
+    color: white;
+    font-weight: 600;
+    border-radius: 35px;
+    cursor: pointer;
+    width: 168px;
+    height: 42px;
+}
+
+.socialActions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    /* space between button and icons */
+}
+
+
+.socials {
+    display: flex;
+    gap: 16px;
+    color: #b9d153;
+}
+
+.socials svg {
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+/* Right Column */
+.right {
+    flex: 1;
+    margin-top: 70px;
+    max-width: 800px;
+
+}
+
+.name {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.about {
+    margin-bottom: 30px;
+}
+
+.aboutText {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #6F7075;
+    font-family: "Montserrat", sans-serif;
+}
+
+.about h4 {
+    margin-bottom: 8px;
+    color: #B7CF53;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.infoGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.infoGrid h4 {
+    margin: 0;
+    font-size: 20px;
+    color: #B7CF53;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+label,
+span,
+p {
+    font-family: "Montserrat", sans-serif;
+}
+
+.infoGrid p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #6F7075;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.heartIcon {
+    position: relative;
+    left: 10%;
+    padding: 4px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    background-color: #F4F4F4;
+}
+
+.shareIcon {
+    position: relative;
+    left: 12%;
+    top: -3px;
+    padding: 6px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    background-color: #F4F4F4;
+}
+
+.linkedinIcon {
+    background-color: #b9d153;
+    border-radius: 50%;
+    padding: 5px;
+    width: 34px;
+    height: 34px;
+}
+
+.linkedinIcon svg {
+    margin-left: 2px;
+}
+
+.youtubeIcon {
+    background-color: #b9d153;
+    border-radius: 50%;
+    padding: 5px;
+    width: 34px;
+    height: 34px;
+}
+
+.facebookIcon {
+    background: white;
+    border-radius: 50%;
+    height: 41px;
+    width: 41px;
+}
+
+.youtubeIcon svg {
+    margin: 2px;
+}
+
+.phoneIcon {
+    display: none;
+}
+
+.instaIcon {
+    background-color: #b9d153;
+    border-radius: 50%;
+    padding: 5px;
+    width: 34px;
+    height: 34px;
+}
+
+.instaIcon svg {
+    margin: 2px;
+}
+
+.shareIconMobile {
+    display: none;
+}
+
+.heartIconMobile {
+    display: none;
+}
+
+
+
+
+/* Modal Overlay */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+/* Modal Box */
+.modal {
+    background: #fff;
+    border-radius: 12px;
+    width: 500px;
+    max-width: 75%;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+/* Modal Header */
+.modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modalHeader h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.closeBtn {
+    background: transparent;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #66666680;
+}
+
+/* Contact Form */
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contactForm label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+}
+
+.contactForm input,
+.contactForm textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+.contactForm textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Footer */
+.formFooter {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.submitBtn {
+    background: #b9d153;
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.submitBtn:hover {
+    background: #a2b942;
+}
+
+/*responsiveness*/
+
+@media (max-width: 1200px) {
+    .profileImg {
+        width: 368px;
+        height: 411px;
+    }
+
+    .profileSection {
+        display: block;
+        gap: 90px;
+        background: #ffffff;
+        border-radius: 12px;
+        margin-top: 5rem;
+        padding-left: 0;
+    }
+
+    .socialActions {
+        display: block;
+        align-items: center;
+        position: relative;
+        top: -6.95rem;
+    }
+
+    .socials {
+        display: flex;
+        gap: 16px;
+        color: #b9d153;
+        margin-top: 15px;
+    }
+
+    .contactBtn {
+        margin-left: 3.7rem;
+        width: 149px;
+    }
+
+    .phoneIcon {
+        display: block;
+        background-color: #b9d153;
+        border-radius: 50%;
+        padding: 5px;
+        width: 34px;
+        height: 34px;
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .phoneIcon svg {
+        margin-top: 2px;
+        margin-left: 2px;
+    }
+
+    .instaIcon {
+        display: block;
+        background-color: #b9d153;
+        border-radius: 50%;
+        padding: 5px;
+        width: 34px;
+        height: 34px;
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .instaIcon svg {
+        margin-top: 2px;
+        margin-left: 2px;
+    }
+
+    .linkedinIcon {
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .youtubeIcon {
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .facebookIcon {
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .right {
+        flex: 1;
+        margin-top: 0;
+        padding-top: 0;
+        max-width: 800px;
+
+    }
+
+    .left {
+        height: 440px;
+    }
+
+    .name {
+        text-align: center;
+        margin-left: 2.5rem;
+    }
+
+    .subtitle {
+        text-align: center;
+    }
+
+    .searchIcon {
+        position: relative;
+        top: 0;
+        left: 1rem;
+    }
+
+    .about {
+        padding: 0 40px;
+    }
+
+    .infoGrid {
+        display: block;
+        padding: 0 40px;
+    }
+
+    .infoGrid div {
+        margin-bottom: 25px;
+    }
+
+    .shareIconMobile {
+        position: relative;
+        left: 9%;
+        top: -3px;
+        padding: 6px;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        background-color: #F4F4F4;
+    }
+
+    .heartIconMobile {
+        position: relative;
+        left: 8%;
+        padding: 4px;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        background-color: #F4F4F4;
+    }
+
+    .subtitleText {
+        margin-left: 75px;
+    }
+
+    .heartIcon,
+    .shareIcon {
+        display: none;
+    }
+}
