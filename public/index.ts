@@ -11,5 +11,13 @@ export const IMAGES: { [key: string]: string } = {
     closed: './Listing/closed.png',
     'bell-icon': './Icons/bell.svg',
     user:'./Icons/user.svg',
-    'down-arrow': './Icons/down-arrow.svg'
+    'down-arrow': './Icons/down-arrow.svg',
+    facebook: './Icons/facebook.svg',
+    youtube: './Icons/youtube.svg',
+    linkedin: './Icons/linkedin.svg',
+    phone: './Icons/phone.svg',
+    instagram: './Icons/insta.svg',
+    share: './Icons/share.svg',
+    heart: './Icons/heart.svg',
+    search:'./Icons/search.svg'
 }

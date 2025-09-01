@@ -13,5 +13,5 @@ export class Profile {
     openModal = () => {this.isModalOpen=true;}
     closeModal = () => {this.isModalOpen=false;}
 
-    images = IMAGES;
+    IMAGES = IMAGES;
 }

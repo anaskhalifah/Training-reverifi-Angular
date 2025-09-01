@@ -1,6 +1,6 @@
 <section class="profileSection">
     <div class="left">
-        <img [src]="images['JacobIMG']" alt="Profile" class="profileImg" />
+        <img [src]="IMAGES['JacobIMG']" alt="Profile" class="profileImg" />
 
         <div class="socialActions">
             <button class="contactBtn" (click)="openModal()">
@@ -9,14 +9,19 @@
 
             <div class="socials">
                 <span class="facebookIcon">
+                    <img [src]="IMAGES['facebook']" alt="Facebook Icon" />
                 </span>
                 <span class="youtubeIcon">
+                    <img [src]="IMAGES['youtube']" alt="YouTube Icon" />
                 </span>
                 <span class="linkedinIcon">
+                    <img [src]="IMAGES['linkedin']" alt="LinkedIn Icon" />
                 </span>
                 <span class="phoneIcon">
+                    <img [src]="IMAGES['phone']" alt="Phone Icon" />
                 </span>
                 <span class="instaIcon">
+                    <img [src]="IMAGES['instagram']" alt="Instagram Icon" />
                 </span>
             </div>
         </div>
@@ -26,7 +31,7 @@
         <h2 class="name">
             Jacob Jones
             <span class="searchIcon">
-                <img src="/src/assets/searchIcon.png" alt="" />
+                <img [src]="IMAGES['search']" alt="" />
             </span>
         </h2>
         <p class="subtitle">
@@ -34,8 +39,10 @@
         <div>
             <span class="subtitleText">NMLS #068543894</span>
             <span class="heartIconMobile">
+                <img [src]="IMAGES['heart']" alt="Heart Icon" />
             </span>
             <span class="shareIconMobile">
+                <img [src]="IMAGES['share']" alt="Share Icon" />
             </span>
         </div>
        
@@ -66,8 +73,10 @@
                 <p>
                     jacob.jones@example.com
                     <span class="heartIcon">
+                        <img [src]="IMAGES['heart']" alt="Heart Icon" />
                     </span>
                     <span class="shareIcon">
+                        <img [src]="IMAGES['share']" alt="Share Icon" />
                     </span>
                 </p>
             </div>

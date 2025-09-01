@@ -56,7 +56,7 @@
     color: #b9d153;
 }
 
-.socials svg {
+.socials img {
     cursor: pointer;
     transition: color 0.2s ease;
 }
@@ -159,7 +159,7 @@ p {
     height: 34px;
 }
 
-.linkedinIcon svg {
+.linkedinIcon img {
     margin-left: 2px;
 }
 
@@ -178,8 +178,8 @@ p {
     width: 41px;
 }
 
-.youtubeIcon svg {
-    margin: 2px;
+.youtubeIcon img {
+    margin: 6px 0 0 4px;
 }
 
 .phoneIcon {
@@ -194,8 +194,8 @@ p {
     height: 34px;
 }
 
-.instaIcon svg {
-    margin: 2px;
+.instaIcon img {
+    margin: 2px 0 0 4px;
 }
 
 .shareIconMobile {
@@ -352,9 +352,8 @@ p {
         box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
     }
 
-    .phoneIcon svg {
-        margin-top: 2px;
-        margin-left: 2px;
+    .phoneIcon img {
+        margin: 6px 0 0 6px;
     }
 
     .instaIcon {
@@ -367,7 +366,7 @@ p {
         box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
     }
 
-    .instaIcon svg {
+    .instaIcon img {
         margin-top: 2px;
         margin-left: 2px;
     }
