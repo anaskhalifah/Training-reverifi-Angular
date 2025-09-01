@@ -159,6 +159,9 @@
       .hamburger {
         display: block;
       }
+      .hamburger img {
+        color: white;
+      }
 
       .headerContainer {
         justify-content: space-between;

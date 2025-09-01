@@ -27,5 +27,6 @@ export const IMAGES: { [key: string]: string } = {
     garage: './Icons/garage.svg',
     message: './Icons/message.svg',
     'filled-heart': './Icons/filled-heart.svg',
-    twitter: './Icons/twitter.svg'
+    twitter: './Icons/twitter.svg',
+    list: './Icons/list.svg'
 }
